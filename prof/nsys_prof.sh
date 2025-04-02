@@ -21,11 +21,11 @@ usage () {
  echo "nvprof-script [nvprof options] [-h] [-o outfile] -c a.out [a.out options]";
 }
 cd ../src
-module load mpi/mpich-4.2.0-x86_64
 nvprof_args=""
 while [ $# -gt 0 ];
 do
     case "$1" in
+        (-f) shift; file="$1";;
         (-o) shift; outfile="$1";;
         (-c) shift; break;;
         (-h) usage; exit 1;;
@@ -36,7 +36,7 @@ done
 
 # If user did not provide output filename then create one
 if [ -z $outfile ] ; then
-    outfile=`basename $1`.nvprof-out
+    outfile=`$1`.nvprof-out
 fi
 
 # Find the rank of the process from the MPI rank environment variable
@@ -44,17 +44,8 @@ fi
 # and MVAPICH.  If your implementation is different, you will need to
 # make a change here.
 
-# Open MPI
-if [ ! -z ${OMPI_COMM_WORLD_RANK} ] ; then
-    rank=${OMPI_COMM_WORLD_RANK}
-fi
-# MVAPICH
-if [ ! -z ${MV2_COMM_WORLD_RANK} ] ; then
-    rank=${MV2_COMM_WORLD_RANK}
-fi
-
 # Set the nvprof command and arguments.
-NVPROF="nsys profile -o ../prof/$outfile.$rank $nvprof_args" 
+NVPROF="nsys profile -o ../prof/$file/$outfile.$RANDOM $nvprof_args" 
 exec $NVPROF $*
 
 # If you want to limit which ranks get profiled, do something like
