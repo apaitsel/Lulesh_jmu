@@ -2,4 +2,5 @@
 *.asc
 regNumList.txt
 lulesh
-
+build/
+build-serial/
