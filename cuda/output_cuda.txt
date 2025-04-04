@@ -1,58 +1,40 @@
-Host gpu01 using GPU 0: NVIDIA A2
-Running until t=0.010000, Problem size=15x15x15
-   Used Memory         =   70.1875 Mb
+Host gpu08 using GPU 0: NVIDIA A2
+Running until t=0.010000, Problem size=5x5x5
+   Used Memory         =   68.1875 Mb
 Run completed:  
-   Problem size        =  15 
+   Problem size        =  5 
    MPI tasks           =  1 
-   Iteration count     =  400 
-   Final Origin Energy = 5.702894e+04 
+   Iteration count     =  72 
+   Final Origin Energy = 7.853665e+03 
    Testing Plane 0 of Energy Array on rank 0:
-        MaxAbsDiff   = 1.637090e-11
-        TotalAbsDiff = 7.963690e-11
-        MaxRelDiff   = 4.985972e-13
+        MaxAbsDiff   = 1.364242e-12
+        TotalAbsDiff = 3.619221e-12
+        MaxRelDiff   = 8.311671e-14
 
 
-Elapsed time         =       0.14 (s)
-Grind time (us/z/c)  = 0.10357333 (per dom)  (0.10357333 overall)
-FOM                  =  9654.9949 (z/s)
+Elapsed time         =       0.01 (s)
+Grind time (us/z/c)  = 0.86422222 (per dom)  (0.86422222 overall)
+FOM                  =  1157.1098 (z/s)
 
-Host gpu01 using GPU 0: NVIDIA A2
-Running until t=0.010000, Problem size=19x19x19
-   Used Memory         =   72.1875 Mb
+Host gpu08 using GPU 0: NVIDIA A2
+Running until t=0.010000, Problem size=10x10x10
+   Used Memory         =   68.1875 Mb
 Run completed:  
-   Problem size        =  19 
+   Problem size        =  10 
    MPI tasks           =  1 
-   Iteration count     =  540 
-   Final Origin Energy = 8.793180e+04 
+   Iteration count     =  231 
+   Final Origin Energy = 2.720531e+04 
    Testing Plane 0 of Energy Array on rank 0:
-        MaxAbsDiff   = 2.000888e-11
-        TotalAbsDiff = 1.850330e-10
-        MaxRelDiff   = 1.054535e-12
+        MaxAbsDiff   = 2.273737e-12
+        TotalAbsDiff = 1.921985e-11
+        MaxRelDiff   = 9.620928e-14
 
 
-Elapsed time         =       0.36 (s)
-Grind time (us/z/c)  = 0.096473139 (per dom)  (0.096473139 overall)
-FOM                  =   10365.58 (z/s)
+Elapsed time         =       0.03 (s)
+Grind time (us/z/c)  =      0.149 (per dom)  (     0.149 overall)
+FOM                  =  6711.4094 (z/s)
 
-Host gpu01 using GPU 0: NVIDIA A2
-Running until t=0.010000, Problem size=24x24x24
-   Used Memory         =   76.1875 Mb
-Run completed:  
-   Problem size        =  24 
-   MPI tasks           =  1 
-   Iteration count     =  717 
-   Final Origin Energy = 1.351853e+05 
-   Testing Plane 0 of Energy Array on rank 0:
-        MaxAbsDiff   = 2.182787e-11
-        TotalAbsDiff = 3.238937e-10
-        MaxRelDiff   = 1.217355e-12
-
-
-Elapsed time         =       0.82 (s)
-Grind time (us/z/c)  = 0.082601277 (per dom)  (0.082601277 overall)
-FOM                  =   12106.35 (z/s)
-
-Host gpu01 using GPU 0: NVIDIA A2
+Host gpu08 using GPU 0: NVIDIA A2
 Running until t=0.010000, Problem size=30x30x30
    Used Memory         =   84.1875 Mb
 Run completed:  
@@ -67,42 +49,78 @@ Run completed:
 
 
 Elapsed time         =       1.97 (s)
-Grind time (us/z/c)  = 0.078231323 (per dom)  (0.078231323 overall)
-FOM                  =  12782.604 (z/s)
+Grind time (us/z/c)  = 0.078235098 (per dom)  (0.078235098 overall)
+FOM                  =  12781.987 (z/s)
 
-Host gpu01 using GPU 0: NVIDIA A2
-Running until t=0.010000, Problem size=38x38x38
-   Used Memory         =  102.1875 Mb
+Host gpu08 using GPU 0: NVIDIA A2
+Running until t=0.010000, Problem size=45x45x45
+   Used Memory         =  130.1875 Mb
 Run completed:  
-   Problem size        =  38 
+   Problem size        =  45 
    MPI tasks           =  1 
-   Iteration count     =  1221 
-   Final Origin Energy = 3.120112e+05 
+   Iteration count     =  1477 
+   Final Origin Energy = 4.234875e+05 
+   Testing Plane 0 of Energy Array on rank 0:
+        MaxAbsDiff   = 4.220055e-10
+        TotalAbsDiff = 3.314958e-09
+        MaxRelDiff   = 1.824377e-12
+
+
+Elapsed time         =       9.78 (s)
+Grind time (us/z/c)  = 0.07268031 (per dom)  (0.07268031 overall)
+FOM                  =  13758.885 (z/s)
+
+Host gpu08 using GPU 0: NVIDIA A2
+Running until t=0.010000, Problem size=50x50x50
+   Used Memory         =  146.1875 Mb
+Run completed:  
+   Problem size        =  50 
+   MPI tasks           =  1 
+   Iteration count     =  1662 
+   Final Origin Energy = 5.124778e+05 
    Testing Plane 0 of Energy Array on rank 0:
         MaxAbsDiff   = 1.964509e-10
-        TotalAbsDiff = 1.782708e-09
-        MaxRelDiff   = 1.568164e-12
+        TotalAbsDiff = 4.546938e-09
+        MaxRelDiff   = 4.683820e-12
 
 
-Elapsed time         =       4.86 (s)
-Grind time (us/z/c)  = 0.072554335 (per dom)  (0.072554335 overall)
-FOM                  =  13782.774 (z/s)
+Elapsed time         =      14.96 (s)
+Grind time (us/z/c)  = 0.07203265 (per dom)  (0.07203265 overall)
+FOM                  =  13882.594 (z/s)
 
-Host gpu01 using GPU 0: NVIDIA A2
-Running until t=0.010000, Problem size=48x48x48
-   Used Memory         =  140.1875 Mb
+Host gpu08 using GPU 0: NVIDIA A2
+Running until t=0.010000, Problem size=70x70x70
+   Used Memory         =  320.1875 Mb
 Run completed:  
-   Problem size        =  48 
+   Problem size        =  70 
    MPI tasks           =  1 
-   Iteration count     =  1588 
-   Final Origin Energy = 4.758907e+05 
+   Iteration count     =  2402 
+   Final Origin Energy = 9.417145e+05 
    Testing Plane 0 of Energy Array on rank 0:
-        MaxAbsDiff   = 1.200533e-10
-        TotalAbsDiff = 3.715184e-09
-        MaxRelDiff   = 5.318052e-12
+        MaxAbsDiff   = 4.292815e-10
+        TotalAbsDiff = 1.292787e-08
+        MaxRelDiff   = 4.014480e-12
 
 
-Elapsed time         =      12.64 (s)
-Grind time (us/z/c)  = 0.071952557 (per dom)  (0.071952557 overall)
-FOM                  =  13898.047 (z/s)
+Elapsed time         =      58.01 (s)
+Grind time (us/z/c)  = 0.070405412 (per dom)  (0.070405412 overall)
+FOM                  =  14203.454 (z/s)
+
+Host gpu08 using GPU 0: NVIDIA A2
+Running until t=0.010000, Problem size=90x90x90
+   Used Memory         =  512.1875 Mb
+Run completed:  
+   Problem size        =  90 
+   MPI tasks           =  1 
+   Iteration count     =  3145 
+   Final Origin Energy = 1.482403e+06 
+   Testing Plane 0 of Energy Array on rank 0:
+        MaxAbsDiff   = 6.111804e-10
+        TotalAbsDiff = 2.895113e-08
+        MaxRelDiff   = 3.847986e-12
+
+
+Elapsed time         =     160.12 (s)
+Grind time (us/z/c)  = 0.06983731 (per dom)  (0.06983731 overall)
+FOM                  =  14318.994 (z/s)
 

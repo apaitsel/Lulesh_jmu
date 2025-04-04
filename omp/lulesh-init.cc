@@ -217,6 +217,9 @@ Domain::~Domain()
 void
 Domain::BuildMesh(Int_t nx, Int_t edgeNodes, Int_t edgeElems)
 {
+  //nx is provided with -s
+  //tp is sides?? maybe
+  
   Index_t meshEdgeElems = m_tp*nx ;
 
   // initialize nodal coordinates 

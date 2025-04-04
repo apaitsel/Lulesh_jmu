@@ -3,9 +3,10 @@
 #SBATCH --output=output_cuda.txt          # Standard output and error log
 
 cd build
-./lulesh -s 15
-./lulesh -s 19
-./lulesh -s 24
+./lulesh -s 5
+./lulesh -s 10
 ./lulesh -s 30
-./lulesh -s 38
-./lulesh -s 48
+./lulesh -s 45
+./lulesh -s 50
+./lulesh -s 70
+./lulesh -s 90

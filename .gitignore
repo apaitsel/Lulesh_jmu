@@ -4,3 +4,4 @@ regNumList.txt
 lulesh
 build/
 build-serial/
+build-mpi/

@@ -96,6 +96,7 @@ inline real10 FABS(real10 arg) { return fabsl(arg) ; }
 #define CACHE_ALIGN_REAL(n) \
    (((n) + (CACHE_COHERENCE_PAD_REAL - 1)) & ~(CACHE_COHERENCE_PAD_REAL-1))
 
+
 //////////////////////////////////////////////////////
 // Primary data structure
 //////////////////////////////////////////////////////
