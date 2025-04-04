@@ -3,7 +3,7 @@
 ### Cuda
 
 1. cd to the cuda directory
-2. cd to the build directory
+2. cd to the build-cuda directory
 3. run make
 ### OMP
 1. cd to the omp directory
