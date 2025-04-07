@@ -2,7 +2,7 @@
 #SBATCH --job-name=serial_test            # Name of the job
 #SBATCH --output=output_serial.txt          # Standard output and error log
 
-cd build-serial
+cd omp/build-serial
 ./lulesh2.0 -s 5
 ./lulesh2.0 -s 10
 ./lulesh2.0 -s 30

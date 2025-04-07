@@ -2,7 +2,7 @@
 #SBATCH --job-name=omp_test            # Name of the job
 #SBATCH --output=output_omp.txt          # Standard output and error log
 
-cd build
+cd omp/build
 ./lulesh2.0 -s 5
 ./lulesh2.0 -s 10
 ./lulesh2.0 -s 30

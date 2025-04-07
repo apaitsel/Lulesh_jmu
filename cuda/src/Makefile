@@ -1,24 +1,15 @@
-MPI_FLAGS = -DUSE_MPI -I$(MPICH_DIR)/include
 
-NVCC		= nvcc
-FLAGS		= 
-DFLAGS	= $(MPI_FLAGS) -lineinfo
-RFLAGS 	= $(MPI_FLAGS) -O3 -DNDEBUG 
+NVCC = nvcc
+DFLAGS = $(MPI_FLAGS) -lineinfo
+RFLAGS = $(MPI_FLAGS) -O3 -DNDEBUG 
 
-#SILO_INCLUDES := /usr/local/silo-4.8/include
-#SILO_LIBS := /usr/local/silo-4.8/lib
-
-LINKFLAGS = -lmpich -L$(MPICH_DIR)/lib 
-#LINKFLAGS += -L$(SILO_LIBS) -lsilo
-
-#INC_SILO:= -I$(SILO_INCLUDES)
 
 all: release 
 
-debug: LINKFLAGS += 
+debug: LINKFLAGS +=
 
-release: 	FLAGS += $(RFLAGS)
-debug: 		FLAGS += $(DFLAGS)
+release: FLAGS += $(RFLAGS)
+debug: FLAGS += $(DFLAGS)
 
 release: lulesh
 debug: lulesh
@@ -26,17 +17,17 @@ debug: lulesh
 lulesh: allocator.o lulesh.o lulesh-comms.o lulesh-comms-gpu.o
 	$(NVCC) $(LINKFLAGS) allocator.o lulesh.o lulesh-comms.o lulesh-comms-gpu.o -o lulesh
 
-allocator.o: allocator.cu vector.h
-	$(NVCC) $(FLAGS) allocator.cu -I ./ -c -o allocator.o
+allocator.o: ../src/allocator.cu ../src/vector.h
+	$(NVCC) $(FLAGS) ../src/allocator.cu -I ../src -c -o allocator.o
 
-lulesh.o: lulesh.cu util.h vector.h allocator.h
-	$(NVCC) $(FLAGS) lulesh.cu -I ./  -I/shared/common/mpich-4.2.0/include -c -o lulesh.o
+lulesh.o: ../src/lulesh.cu ../src/util.h ../src/vector.h ../src/allocator.h
+	$(NVCC) $(FLAGS) ../src/lulesh.cu -I ../src -c -o lulesh.o
 
-lulesh-comms.o: lulesh-comms.cu
-	$(NVCC) $(FLAGS) lulesh-comms.cu -I ./ -I/shared/common/mpich-4.2.0/include -c -o lulesh-comms.o
+lulesh-comms.o: ../src/lulesh-comms.cu
+	$(NVCC) $(FLAGS) ../src/lulesh-comms.cu -I ../src -c -o lulesh-comms.o
 
-lulesh-comms-gpu.o: lulesh-comms-gpu.cu
-	$(NVCC) $(FLAGS) lulesh-comms-gpu.cu -I ./ -I/shared/common/mpich-4.2.0/include -c -o lulesh-comms-gpu.o
+lulesh-comms-gpu.o: ../src/lulesh-comms-gpu.cu
+	$(NVCC) $(FLAGS) ../src/lulesh-comms-gpu.cu -I ../src -c -o lulesh-comms-gpu.o
 
-clean: 
-	rm -rf allocator.o lulesh-comms.o lulesh-comms-gpu.o lulesh.o lulesh xyz.asc regNumList.txt
+clean:
+	rm -rf allocator.o lulesh-comms.o lulesh-comms-gpu.o lulesh.o lulesh
