@@ -5,3 +5,4 @@ lulesh
 build/
 build-serial/
 build-mpi/
+*.data

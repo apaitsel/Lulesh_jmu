@@ -159,7 +159,7 @@ Additional BSD Notice
 # include <omp.h>
 #endif
 
-#include "lulesh_tuple.h"
+#include "lulesh.h"
 
 /* Work Routines */
 
