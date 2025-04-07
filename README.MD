@@ -4,7 +4,7 @@
 
 1. cd to the cuda directory
 2. cd to the build-cuda directory
-3. run make
+3. run the build.sh script to compile the cuda version
 ### OMP
 1. cd to the omp directory
 2. run the build.sh script to compile the omp version
