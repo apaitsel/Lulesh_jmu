@@ -2,7 +2,7 @@
 #SBATCH --job-name=cuda_test            # Name of the job
 #SBATCH --output=output_cuda.txt          # Standard output and error log
 
-cd build
+cd build-cuda
 ./lulesh -s 5
 ./lulesh -s 10
 ./lulesh -s 30

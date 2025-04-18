@@ -1,6 +1,6 @@
 Running problem size 5^3 per domain until completion
 Num processors: 1
-Num threads: 16
+Num threads: 32
 Total number of elements: 125 
 
 To run other sizes, use -s <integer>.
@@ -21,13 +21,13 @@ Run completed:
         TotalAbsDiff = 1.771377e-12
         MaxRelDiff   = 4.412566e-14
 
-Elapsed time         =       0.27 (s)
-Grind time (us/z/c)  =  30.266778 (per dom)  (  0.272401 overall)
-FOM                  =  33.039526 (z/s)
+Elapsed time         =       0.52 (s)
+Grind time (us/z/c)  =  58.298889 (per dom)  (   0.52469 overall)
+FOM                  =  17.152986 (z/s)
 
 Running problem size 10^3 per domain until completion
 Num processors: 1
-Num threads: 16
+Num threads: 32
 Total number of elements: 1000 
 
 To run other sizes, use -s <integer>.
@@ -48,13 +48,13 @@ Run completed:
         TotalAbsDiff = 1.948782e-11
         MaxRelDiff   = 1.566182e-14
 
-Elapsed time         =          1 (s)
-Grind time (us/z/c)  =  4.4213506 (per dom)  (  1.021332 overall)
-FOM                  =  226.17523 (z/s)
+Elapsed time         =        2.1 (s)
+Grind time (us/z/c)  =  8.8981299 (per dom)  (  2.055468 overall)
+FOM                  =  112.38317 (z/s)
 
 Running problem size 30^3 per domain until completion
 Num processors: 1
-Num threads: 16
+Num threads: 32
 Total number of elements: 27000 
 
 To run other sizes, use -s <integer>.
@@ -75,13 +75,13 @@ Run completed:
         TotalAbsDiff = 8.615093e-10
         MaxRelDiff   = 1.461140e-12
 
-Elapsed time         =         14 (s)
-Grind time (us/z/c)  = 0.56274988 (per dom)  ( 14.161038 overall)
-FOM                  =  1776.9884 (z/s)
+Elapsed time         =         24 (s)
+Grind time (us/z/c)  = 0.97087148 (per dom)  (  24.43101 overall)
+FOM                  =  1030.0024 (z/s)
 
 Running problem size 45^3 per domain until completion
 Num processors: 1
-Num threads: 16
+Num threads: 32
 Total number of elements: 91125 
 
 To run other sizes, use -s <integer>.
@@ -102,13 +102,13 @@ Run completed:
         TotalAbsDiff = 2.865617e-09
         MaxRelDiff   = 1.178229e-12
 
-Elapsed time         =         33 (s)
-Grind time (us/z/c)  = 0.24593383 (per dom)  ( 33.100634 overall)
-FOM                  =  4066.1344 (z/s)
+Elapsed time         =         59 (s)
+Grind time (us/z/c)  = 0.43548658 (per dom)  ( 58.612847 overall)
+FOM                  =   2296.282 (z/s)
 
 Running problem size 50^3 per domain until completion
 Num processors: 1
-Num threads: 16
+Num threads: 32
 Total number of elements: 125000 
 
 To run other sizes, use -s <integer>.
@@ -129,13 +129,13 @@ Run completed:
         TotalAbsDiff = 3.984384e-09
         MaxRelDiff   = 1.209273e-12
 
-Elapsed time         =         44 (s)
-Grind time (us/z/c)  = 0.21320921 (per dom)  ( 44.294213 overall)
-FOM                  =  4690.2289 (z/s)
+Elapsed time         =         87 (s)
+Grind time (us/z/c)  = 0.41671219 (per dom)  ( 86.571957 overall)
+FOM                  =  2399.7378 (z/s)
 
 Running problem size 70^3 per domain until completion
 Num processors: 1
-Num threads: 16
+Num threads: 32
 Total number of elements: 343000 
 
 To run other sizes, use -s <integer>.
@@ -156,13 +156,13 @@ Run completed:
         TotalAbsDiff = 1.214196e-08
         MaxRelDiff   = 3.622575e-12
 
-Elapsed time         =    1.1e+02 (s)
-Grind time (us/z/c)  = 0.13630315 (per dom)  ( 112.29826 overall)
-FOM                  =  7336.5876 (z/s)
+Elapsed time         =    1.6e+02 (s)
+Grind time (us/z/c)  = 0.19097134 (per dom)  ( 157.33862 overall)
+FOM                  =  5236.3877 (z/s)
 
 Running problem size 90^3 per domain until completion
 Num processors: 1
-Num threads: 16
+Num threads: 32
 Total number of elements: 729000 
 
 To run other sizes, use -s <integer>.
@@ -183,7 +183,7 @@ Run completed:
         TotalAbsDiff = 3.038096e-08
         MaxRelDiff   = 3.756053e-12
 
-Elapsed time         =    3.4e+02 (s)
-Grind time (us/z/c)  = 0.14681994 (per dom)  (  336.6148 overall)
-FOM                  =  6811.0641 (z/s)
+Elapsed time         =    4.3e+02 (s)
+Grind time (us/z/c)  = 0.18759918 (per dom)  ( 430.10958 overall)
+FOM                  =  5330.5137 (z/s)
 

@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name=inner_test_runner           # Name of the job
-#SBATCH --output=test_runner.txt          # Standard output and error log
+#SBATCH --job-name=both_test_runner           # Name of the job
+#SBATCH --output=both_runner.txt          # Standard output and error log
 
 cd test-scripts/
 export OMP_NUM_THREADS=16
