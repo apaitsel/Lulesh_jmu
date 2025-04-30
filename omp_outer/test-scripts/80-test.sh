@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=output_omp_outer_80
 #SBATCH --output=output_omp_outer_80.txt
-
+export OMP_NUM_THREADS=16
 ../build/lulesh2.0 -s 5  -r 80
 ../build/lulesh2.0 -s 10 -r 80
 ../build/lulesh2.0 -s 30 -r 80
