@@ -6,3 +6,4 @@ build/
 build-serial/
 build-mpi/
 *.data
+output*
